@@ -3,7 +3,7 @@ import type { Entry } from "./entries";
 
 export const GuestbookNode = ({ data }: NodeProps & { data: Entry }) => {
   return (
-    <div className="w-[280px] h-[180px] rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm flex flex-col justify-between">
+    <div className="w-[280px] h-[180px] rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm flex flex-col justify-between overflow-hidden">
       <p className="text-[15px] leading-snug text-neutral-800">
         <span className="text-neutral-300 text-xl leading-none">„</span>
         Das For..Net Symposium ist für mich {data.statement}

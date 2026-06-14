@@ -9,7 +9,7 @@ import { guestbookNodes } from "./layout";
 
 const nodeTypes = { guestbookEntry: GuestbookNode, intro: IntroNode };
 
-export default function App() {
+export const App = () => {
   const [selected, setSelected] = useState<Entry | null>(null);
 
   const onNodeClick = useCallback((_: React.MouseEvent, node: Node) => {
@@ -38,4 +38,4 @@ export default function App() {
       <EntryModal entry={selected} onClose={() => setSelected(null)} />
     </div>
   );
-}
+};
